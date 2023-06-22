@@ -1,0 +1,163 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --bg-color: #27292d;
+   --active: #ffcea2;
+   --white: #ffffff;
+   --black: #000000;
+   --stroke: #979797;
+}
+
+body {
+   font-family: "Mulish", sans-serif;
+   text-decoration: none;
+   color: var(--white);
+   height: 100%;
+   /* width: 100vh; */
+   background-color: var(--bg-color);
+}
+
+section {
+   width: 100%;
+   height: 100vh;
+   padding: 0;
+   margin: 0;
+}
+
+nav {
+   display: flex;
+   padding: 2em;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--white);
+}
+
+.nav-links {
+   width: 50%;
+   display: flex;
+   justify-content: space-evenly;
+   font-weight: 400;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: var(--white);
+}
+
+.nav-links .active {
+   color: var(--active);
+   font-weight: 700;
+}
+
+.bars {
+   display: flex;
+   justify-content: space-evenly;
+   width: 20%;
+   color: var(--white);
+}
+
+main {
+   display: flex;
+   height: fit-content;
+}
+
+.pagenation {
+   height: 50vh;
+}
+
+main .pagenation {
+   margin-top: 3rem;
+   margin: 1rem;
+}
+.carousel-inner {
+   width: 65vw;
+   height: 100%;
+}
+.main-content {
+   width: 30vw;
+   padding: 1em;
+   margin: 0px 1em;
+   height: 100%;
+}
+
+.main-content img {
+   background-size: cover;
+   height: 30vh;
+   width: 100%;
+}
+.main-content p {
+   padding: 1em 0px;
+}
+.main-content h4 {
+   font-weight: 600;
+   font-size: 1.3rem;
+}
+.carousel-inner {
+   height: 100%;
+}
+.carousel-item {
+   height: fit-content;
+}
+.cards-wrapper {
+   display: flex;
+   height: 100%;
+}
+.card {
+   margin: 0.5em;
+   width: calc(100% / 3);
+   border: none;
+   height: 100%;
+   background-color: var(--bg-color);
+   position: relative;
+   /* height: fit-content; */
+}
+.card img {
+   height: 75%;
+   /* width: 100%; */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+   height: 75%;
+   display: flex;
+   justify-content: space-between;
+   margin: 0.5em;
+}
+
+button span {
+   background-color: var(--stroke);
+}
+
+.carousel-control-next {
+   overflow: hidden;
+   justify-content: flex-end;
+}
+
+.carousel-indicators {
+   position: absolute;
+   bottom: 2.5em;
+}
+footer {
+   display: flex;
+   margin-top: 3em;
+}
+footer button {
+   padding: 2.5em;
+   width: 236px;
+   border-radius: 6px;
+   color: var(--black);
+   background-color: var(--active);
+   font-weight: 700;
+   margin: 1em 2em;
+   border: none;
+   text-align: center;
+}
+/* @media screen and (max-width: 567px) {
+   .card:not(:first-child) {
+      display: none;
+   }
+} */
