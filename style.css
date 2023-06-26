@@ -17,12 +17,12 @@ body {
    text-decoration: none;
    color: var(--white);
    height: 100%;
-   /* width: 100vh; */
+   width: 100vw;
    background-color: var(--bg-color);
 }
 
 section {
-   width: 100%;
+   width: 100vw;
    height: 100vh;
    padding: 0;
    margin: 0;
@@ -65,18 +65,12 @@ main {
    height: fit-content;
 }
 
-.pagenation {
-   height: 50vh;
-}
-
 main .pagenation {
    margin-top: 3rem;
    margin: 1rem;
+   height: 50vh;
 }
-.carousel-inner {
-   width: 65vw;
-   height: 100%;
-}
+
 .main-content {
    width: 30vw;
    padding: 1em;
@@ -97,6 +91,7 @@ main .pagenation {
    font-size: 1.3rem;
 }
 .carousel-inner {
+   width: 65vw;
    height: 100%;
 }
 .carousel-item {
@@ -122,7 +117,7 @@ main .pagenation {
 
 .carousel-control-next,
 .carousel-control-prev {
-   height: 75%;
+   height: 90%;
    display: flex;
    justify-content: space-between;
    margin: 0.5em;
@@ -139,22 +134,202 @@ button span {
 
 .carousel-indicators {
    position: absolute;
-   bottom: 2.5em;
+   bottom: -3em;
 }
 footer {
    display: flex;
-   margin-top: 3em;
+   /* margin-top: 3em; */
 }
 footer button {
-   padding: 2.5em;
+   padding: 2em;
    width: 236px;
    border-radius: 6px;
    color: var(--black);
    background-color: var(--active);
    font-weight: 700;
-   margin: 1em 2em;
+   margin: 0 4em;
    border: none;
    text-align: center;
+}
+@media screen and (max-width: 1025px) {
+   nav {
+      padding: 1em;
+   }
+   .nav-links {
+      width: 70%;
+   }
+   .bars {
+      width: 20%;
+   }
+   main {
+      margin: 1em 0 0 0;
+   }
+   .main-content {
+      width: 25vw;
+      padding: 1em;
+      margin: 0px 1em;
+      height: 80%;
+   }
+   main .pagenation {
+      margin-top: 0.5rem;
+      height: 70vh;
+   }
+   .main-content p {
+      padding: 0.5em 0px;
+      font-size: 0.9em;
+   }
+   .main-content h4 {
+      font-weight: 600;
+      font-size: 1em;
+   }
+   .carousel-control-next,
+   .carousel-control-prev {
+      height: 80%;
+   }
+   .carousel-control-next {
+      overflow: hidden;
+      justify-content: flex-end;
+   }
+   .carousel-indicators {
+      position: absolute;
+      bottom: -0.5rem;
+   }
+   footer {
+      margin-top: 0px;
+   }
+   footer button {
+      padding: 1rem;
+      width: 200px;
+      margin-bottom: 1rem;
+   }
+}
+@media screen and (max-width: 769px) {
+   .nav-links {
+      width: 70%;
+   }
+   .bars {
+      width: 15%;
+   }
+   main {
+      margin: 1em 0 0 0;
+   }
+   .main-content {
+      width: 30vw;
+      padding: 1em;
+      height: 100%;
+   }
+   main .pagenation {
+      margin: 0.5rem 0 0 0.5rem;
+      height: 60vh;
+   }
+
+   .main-content p {
+      padding: 0.5em 0px;
+      font-size: 0.8em;
+   }
+   .main-content h4 {
+      font-weight: 600;
+      font-size: 1rem;
+   }
+   .card img {
+      height: 100%;
+   }
+
+   .carousel-control-next,
+   .carousel-control-prev {
+      height: 60%;
+   }
+
+   .carousel-indicators {
+      position: absolute;
+      bottom: 2.5em;
+   }
+   footer {
+      margin-top: 1.5rem;
+      width: 100%;
+   }
+   footer button {
+      width: 100%;
+      font-size: 1rem;
+      margin: 0 5em;
+   }
+}
+
+@media screen and (max-width: 426px) {
+   nav {
+      display: flex;
+      padding: 1em 0 0 0;
+      justify-content: space-around;
+   }
+   .nav-links {
+      width: 60%;
+   }
+   .bars {
+      width: 30%;
+   }
+   main {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+   }
+   .nav-links {
+      width: 70%;
+   }
+   .bars {
+      width: 15%;
+   }
+   main {
+      margin: 1em 0 0 0;
+   }
+   .main-content {
+      width: 90vw;
+      padding: 0;
+      height: 40%;
+   }
+   .main-content img {
+      width: 100vw;
+   }
+   main .pagenation {
+      margin: 0;
+      height: 0;
+      display: none;
+   }
+
+   .main-content p {
+      padding: 0.5em 0px;
+      font-size: 0.8em;
+   }
+   .main-content h4 {
+      font-weight: 600;
+      font-size: 1rem;
+   }
+   .card img {
+      height: 100%;
+   }
+   .carousel-inner {
+      width: 100vw;
+   }
+   .carousel-control-next,
+   .carousel-control-prev {
+      height: 90%;
+   }
+   .carousel-control-next {
+      overflow: hidden;
+      justify-content: flex-end;
+   }
+   .carousel-indicators {
+      position: absolute;
+      bottom: -2rem;
+   }
+   footer {
+      margin-top: 1.5rem;
+   }
+   footer button {
+      padding: 1rem;
+      width: 500px;
+      font-size: 0.8rem;
+      margin: 1em 2em;
+   }
 }
 /* @media screen and (max-width: 567px) {
    .card:not(:first-child) {
